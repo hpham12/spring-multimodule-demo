@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.hpham'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    compileOnly project(':log-facade')
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    implementation("org.springframework:spring-context:6.1.5")
+
+}
+
+test {
+    useJUnitPlatform()
+}
