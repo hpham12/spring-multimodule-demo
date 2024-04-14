@@ -13,16 +13,16 @@ public class MyLogger implements Logger{
 
     @Override
     public void info(String message) {
-        System.out.printf("%s--DEBUG--: %s%n", LocalDateTime.now(), message);
+        System.out.printf("%s--INFO--: %s%n", LocalDateTime.now(), message);
     }
 
     @Override
     public void warn(String message) {
-        System.out.printf("%s--DEBUG--: %s%n", LocalDateTime.now(), message);
+        System.out.printf("%s--WARN--: %s%n", LocalDateTime.now(), message);
     }
 
     @Override
     public void error(String message) {
-        System.out.printf("%s--DEBUG--: %s%n", LocalDateTime.now(), message);
+        System.out.printf("%s--ERROR--: %s%n", LocalDateTime.now(), message);
     }
 }
